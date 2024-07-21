@@ -224,10 +224,10 @@ const Plugin = () => {
 		init: reveal => {
 
 			deck = reveal;
-			deck.registerKeyboardShortcut( 'CTRL + Shift + F', 'Search' );
+			deck.registerKeyboardShortcut( 'CTRL + Shift + H', 'Search' );
 
 			document.addEventListener( 'keydown', function( event ) {
-				if( event.key == "F" && (event.ctrlKey || event.metaKey) ) { //Control+Shift+f
+				if( event.key == "H" && (event.ctrlKey || event.metaKey) ) { //Control+Shift+f
 					event.preventDefault();
 					toggleSearch();
 				}
